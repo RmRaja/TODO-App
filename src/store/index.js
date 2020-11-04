@@ -48,7 +48,11 @@ const store = new Vuex.Store({
             state.todoId++;
         },
         updateTodoList(state, payload) {
-
+            let index = state.todoList.findIndex(todo => todo.id == payload.id);
+            if (index >= 0) {
+                state.todoList[index].name = payload.name;
+                state.todoList[index].status = payload.status;
+            }
         },
         deleteTodoList(state, payload) {
 
