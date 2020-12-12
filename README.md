@@ -1,5 +1,9 @@
 # TODO App
 
+<p align="center">
+<img src="TODO_APP_GIF.gif"  />
+</p>  
+
 ## Framework7 CLI Options
 
 Framework7 app created with following options:
